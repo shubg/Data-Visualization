@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./filters.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Filters to show Users by their Likes</h2>
+        <div class="row">
+            <div class="col-25">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="col-75" id="genderDropdown">
+                <select  name="gender" id="gender">
+                    <option value="both">both</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="region">region</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="region" name="region" placeholder="region code">
+            </div>
+        </div>
+        <div class="row">
+            <button onclick="handleSubmitClick()" id="submit"> Submit </button>
+        </div>
+
+</div>
+<div id="chartContainer" style="height: 400px; max-width: 1200px; margin: 0px auto;"></div>
+</body>
+</html>
